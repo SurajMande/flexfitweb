@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals</title>
+    <link rel="stylesheet" href="meals.css">
+</head>
+<body>
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <h2>FlexiFit</h2>
+                <div id="nav1">
+                    <a href="index.html">Home</a>
+                    <a href="workout.html">Workouts</a>
+                    <a href="meals.html">Meals</a>
+                    <a href="mentor.html">Mentor</a>
+                    <a href="about.html">About Us</a>
+                </div>
+                <div id="nav2">
+                    <a href="login.html">Log in</a>
+                    <a href="signup.html">Sign up</a>
+                </div>
+            </nav>
+            <div id="mid">
+              <div class="meter">
+                <h1>Calorie Meter</h1>
+                <input type="text" id="meal" placeholder="Meal Name">
+                <input type="number" id="calories" placeholder="Calories">
+                <button onclick="addMeal()">Add Meal</button>
+                <button onclick="resetMeals()">Reset</button>
+                <h2>Total Calories: <span id="totalCalories">0</span></h2>
+                <div class="calorie-list" id="calorieList"></div>
+                <div id="new" ></div>
+            </div>
+            </div>
+          
+        </div>
+        <h2 class="eattime">Breakfast</h2>
+        <div id="page2">
+          <div class="container">
+            <!-- Food Items -->
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-valeria-boltneva-842571 1.svg" alt="Salad">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Salad</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-monica-turlui-7218637 1.svg" alt="Tomato Spaghetti">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Tomato Spaghetti</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+          
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-jane-trang-doan-793759 1.svg" alt="Chicken vegetable bowl">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Chicken vegetable bowl</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-catscoming-674574 2.svg" alt="Potato-peas curry with rice">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Potato-peas curry with rice</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-alesiakozik-6120243 2.svg" alt="Tofu fry">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Tofu fry</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+        
+        </div>
+        <h2 class="eattime">Lunch</h2>
+        <div id="page3">
+          <div class="container">
+           
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-catscoming-674574 2.svg" alt="Potato-peas curry with rice">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Potato-peas curry with rice</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-alesiakozik-6120243 2.svg" alt="Tofu fry">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Tofu fry</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-iamabdullahsheik-10508208 2.svg" alt="Paneer curry">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Paneer curry</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-catscoming-674574 2.svg" alt="Potato-peas curry with rice">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Potato-peas curry with rice</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <h2 class="eattime">Dinner</h2>
+        <div id="page4">
+          <div class="container">
+            <!-- Food Items -->
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-valeria-boltneva-842571 1.svg" alt="Salad">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Salad</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-monica-turlui-7218637 1.svg" alt="Tomato Spaghetti">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Tomato Spaghetti</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+          
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-jane-trang-doan-793759 1.svg" alt="Chicken vegetable bowl">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Chicken vegetable bowl</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-catscoming-674574 2.svg" alt="Potato-peas curry with rice">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Potato-peas curry with rice</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-alesiakozik-6120243 2.svg" alt="Tofu fry">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Tofu fry</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+        
+        </div>
+        <h2 class="eattime">Preworkout</h2>
+        <div id="page5">
+          <div class="container">
+           
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-catscoming-674574 2.svg" alt="Potato-peas curry with rice">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Potato-peas curry with rice</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-alesiakozik-6120243 2.svg" alt="Tofu fry">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Tofu fry</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-iamabdullahsheik-10508208 2.svg" alt="Paneer curry">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Paneer curry</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="/images/pexels-catscoming-674574 2.svg" alt="Potato-peas curry with rice">
+              </div>
+              <div class="food-details">
+                <div class="food-name">Potato-peas curry with rice</div>
+                <div class="food-price">130cal</div>
+              </div>
+            </div>
+          </div>
+        </div> 
+    </div>
+    <script src="meals.js"></script>
+</body>
+</html>

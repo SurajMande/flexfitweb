@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+    /* background-color: black; */
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+#main #page1{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background: url(/images/pexels-cesar-galeao-1673528-3253501.jpg);
+    background-size: cover;
+}
+#page1 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vw 1vw;
+    background-color: rgba(0, 0, 0, 0.818);
+}
+#page1 nav h2{
+    font-size: 2.7vw;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+}
+#page1 nav #nav1,#page1 nav #nav2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+#page1 nav #nav1 a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition-duration: 0.15s;
+}
+
+#page1 nav #nav1 a:hover{
+    font-size: 1.7vw;
+    margin-bottom: 0.4vw;
+    border-bottom: 0.2vw solid red;
+}
+
+#page1 nav #nav2 a{
+    padding: 0.8vw 1.5vw;
+    border-radius: 2vw;
+    text-decoration: none;
+    background-color: rgb(255, 8, 0);
+    color: black;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2vw;
+
+}
+#page1 nav #nav2 a:hover{
+    background-color: black;
+    color: white;
+    border: 0.2vw solid red;
+}
+
+#page1 #mid{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.618);
+
+}
+#page1 #mid h1{
+    font-size: 3vw;
+    font-weight: 500;
+    border-bottom: 0.2vw solid red;
+}
+#page1 #mid #slider{
+    padding: 2vw 3vw;
+    display: flex;
+    gap: 6.5vw;
+    overflow-x: scroll ;
+    white-space: nowrap;
+    width: 45%;
+    height: 100%;
+}
+
+#slider::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#page1 #mid #slider .img:hover{
+    cursor: pointer;
+}
+#page1 #mid #slider .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slide 3s infinite linear alternate;
+}
+#page1 #mid #slider .img img{
+    height: 60vh;
+}
+#page1 #mid #slider .img h3{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(-900px);
+    }
+}
+
+#page2{
+    padding: 2vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    background-color: black;
+}
+#page2 h1{
+    font-size: 3vw;
+    font-weight: 500;
+    border-bottom: 0.2vw solid red;
+}
+#page1 #slider1{
+    padding: 2vw 1vw;
+    display: flex;
+    gap: 4vw;
+    overflow-x: scroll ;
+    white-space: nowrap;
+    width: 90%;
+}
+#slider1::-webkit-scrollbar{
+    display: none;
+}
+
+#page2 #slider1 .img:hover{
+    cursor: pointer;
+}
+#page2 #slider1 .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 20%; */
+
+}
+#page2 #slider1 .img h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#page2 #slider1 .img img{
+    width: 22vw;
+}

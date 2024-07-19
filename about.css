@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+    /* background-color: black; */
+}
+
+#page1 button:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid red;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: url(/images/pexels-martabranco-1295572.jpg);
+    background-size: cover;
+}
+#main #page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.648);
+    
+    display: flex;
+    flex-direction: column;
+}
+#page1 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vw 1vw;
+    background-color: rgba(0, 0, 0, 0.718);
+
+}
+#page1 nav h2{
+    font-size: 2.7vw;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+}
+#page1 nav #nav1,#page1 nav #nav2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+#page1 nav #nav1 a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition-duration: 0.15s;
+}
+
+#page1 nav #nav1 a:hover{
+    font-size: 1.7vw;
+    margin-bottom: 0.4vw;
+    border-bottom: 2px solid red;
+}
+
+#page1 nav #nav2 a{
+    padding: 0.8vw 1.5vw;
+    border-radius: 2vw;
+    text-decoration: none;
+    background-color: rgb(255, 8, 0);
+    color: black;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+#page1 nav #nav2 a:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+}
+#page1 .mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    width: 90%;
+    padding: 2vw 0;
+    padding-left: 6vw;
+}
+h1{
+    font-size:4vw ;
+    font-weight: 600;
+    border-bottom: 2px solid red;
+}
+h3{
+    font-size:1.5vw ;
+    font-weight: 500;
+}

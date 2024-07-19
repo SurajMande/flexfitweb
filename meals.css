@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+    /* background-color: black; */
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#main #page1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: url(/images/pexels-roman-odintsov-4552980.jpg);
+    background-color: rgba(0, 0, 0, 0.719);
+    background-size: cover;
+    flex-direction: column;
+
+
+}
+#page1 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vw 1vw;
+    background-color: rgba(0, 0, 0, 0.718);
+
+}
+#page1 nav h2{
+    font-size: 2.7vw;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+}
+
+#page1 nav #nav1,#page1 nav #nav2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+#page1 nav #nav1 a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition-duration: 0.15s;
+}
+
+#page1 nav #nav1 a:hover{
+    font-size: 1.7vw;
+    margin-bottom: 0.4vw;
+    border-bottom: 0.2vw solid red;
+}
+
+#page1 nav #nav2 a{
+    padding: 0.8vw 1.5vw;
+    border-radius: 2vw;
+    text-decoration: none;
+    /* background-color: white;
+    color: black; */
+    background-color: rgb(255, 8, 0);
+    color: black;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2vw;
+
+}
+#page1 nav #nav2 a:hover{
+    background-color: black;
+    color: white;
+    border: 0.2vw solid red;
+}
+
+.meter {
+    height: auto;
+    margin: 5vw 0;
+    margin-left: 30vw;
+    background: #34495ebe;
+    padding: 3vw 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+.meter h1 {
+    color: #e74c3c;
+    padding-bottom: 1.5vw;
+}
+.meter input,.meter button {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+.meter input {
+    background: #ecf0f1;
+    color: #2c3e50;
+    margin-top: 1vw;
+}
+.meter button {
+    background: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
+.meter button:hover {
+    background: #c0392b;
+}
+.meter .calorie-list {
+    margin-top: 20px;
+}
+.meter .calorie-list div {
+    background: #2c3e50;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #34495e;
+}
+
+.container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border: 20px solid black; /* Added margin between rows */
+    background-color: black;
+  }
+  .container::-webkit-scrollbar{
+    display: none;
+  }
+  .food-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top; /* Align items to the top */
+  }
+  .food-image {
+    margin: 2vw;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .food-details {
+    width: inherit;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between;
+    align-items: center; /* Center align items vertically */
+    margin-top: 5px;
+    font-weight: 500;
+  }
+  .food-name, .food-price {
+    flex-grow: 1; /* Allow elements to grow equally */
+  }
+  .food-price {
+    margin-left: 10px; /* Add margin between name and price */
+    color: #666;
+  }
+
+h2{
+    font-weight: 500;
+    border: none;
+    font-size: 3vw;
+}
+  #main .eattime{
+    padding: 0 5vw;
+    padding-top: 1vw;
+    background-color: black;
+  }
